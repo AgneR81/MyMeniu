@@ -1,4 +1,50 @@
 .wrapper {
     width: 100%;
     height: 100%;
+    background-color: bisque;
+    .header {
+        position: fixed;
+        background-color: chocolate;
+        width: 100%;
+        height: 60px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        .header__wrap {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav {
+                display: flex;
+                float: right;
+            }
+            h1 {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
 }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    width: 1200px;
+    margin-left: calc( 50% - 600px);
+    @media (min-width: 600px) {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}    

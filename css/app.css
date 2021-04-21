@@ -92,7 +92,6 @@ html {
 .wrapper {
   width: 100%;
   height: 100%;
-  background-color: bisque;
 }
 
 .wrapper .header {
@@ -122,15 +121,82 @@ html {
   justify-content: center;
 }
 
-.container {
-  width: 1200px;
-  margin-left: calc( 50% - 600px);
+.wrapper .main {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
 }
 
-@media (min-width: 600px) {
-  .container {
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
+@media (min-width: 600) {
+  .wrapper .main {
+    display: flex wrap;
+    float: right;
   }
+}
+
+.wrapper .main .main__wrap {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  padding: 70px 0px;
+}
+
+.wrapper .main .main__wrap .content__top
+.content__bottom {
+  display: inline-block;
+  width: 100%;
+  height: 50%;
+  padding: 15px;
+}
+
+.wrapper .main .main__wrap .content__top
+.content__bottom .content__box {
+  display: grid;
+  width: calc(100% / 4);
+  float: left;
+}
+
+.wrapper .main .main__wrap .content__top
+.content__bottom .content__box .first {
+  width: 100%;
+  padding: 100%;
+}
+
+.wrapper .main .main__wrap .content__top
+.content__bottom .content__box .first h3 {
+  color: red;
+  font-size: 35px;
+  font-style: italic;
+}
+
+.wrapper .main .main__wrap .content__top
+.content__bottom .content__box .first p {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper .main .main__wrap .content__top
+.content__bottom .content__box .second {
+  width: 100%;
+  padding: 100%;
+}
+
+.wrapper .main .main__wrap .content__top
+.content__bottom .content__box .second h3 {
+  color: red;
+  font-size: 35px;
+  font-style: italic;
+}
+
+.wrapper .main .main__wrap .content__top
+.content__bottom .content__box .second p {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  height: 100%;
+  padding: 0px 5px;
 }

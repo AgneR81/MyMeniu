@@ -185,7 +185,7 @@ header .header__wrap .nav {
   .main__wrap .content__boxes {
     display: flex;
     padding: 10px 0 0 20px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     overflow: hidden;
   }
 }
@@ -220,9 +220,9 @@ header .header__wrap .nav {
 @media (min-width: 920px) {
   .main__wrap .content__boxes .box__item {
     display: flex;
+    padding-top: 60px;
     margin: 20px 10px 0;
     width: calc(25% - 40px);
-    float: left;
   }
 }
 
@@ -261,4 +261,75 @@ header .header__wrap .nav {
 
 .main__wrap .about {
   display: block;
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+}
+
+.main__wrap .about h1 {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #74740c;
+}
+
+.main__wrap .about h2 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #74740c;
+}
+
+.main__wrap .about h4 {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #74740c;
+}
+
+.main__wrap .about p {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #74740c;
+}
+
+.main__wrap .about .img__about {
+  width: 100%;
+  padding: 30px;
+  background: #f3d7ae;
+}
+
+.main__wrap .about .line {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+}
+
+.footer .first {
+  display: block;
+  padding: 40px 20px 20px;
+}
+
+.footer .first h1 {
+  font-size: 23px;
+}
+
+.footer .first p {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #74740c;
 }

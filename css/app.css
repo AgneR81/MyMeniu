@@ -216,3 +216,45 @@ header .header__wrap .nav {
   font-size: 12px;
   text-align: center;
 }
+
+@media (min-width: 920px) {
+  .main__wrap .content__boxes .box__item {
+    display: flex;
+    margin: 20px 10px 0;
+    width: calc(25% - 40px);
+    float: left;
+  }
+}
+
+.main__wrap .center {
+  text-align: center;
+}
+
+.main__wrap .center .pagination {
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.main__wrap .center .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.main__wrap .center .pagination a .active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.main__wrap .center .pagination :hover:not(.active) {
+  background-color: #ddd;
+}
+
+.main__wrap .line {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 20px;
+}

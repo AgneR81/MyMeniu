@@ -90,13 +90,8 @@ header {
             display: block;
             margin: 16px 16px 0;
             width: calc(100% - 32px);
-            @media (min-width: $xl) {
-                
-            } 
-
             .img {
                 width: 100%;
-                // display: block;
                 padding: 30px;
                 background: rgb(243, 215, 174);
             }
@@ -113,10 +108,45 @@ header {
             p {
                 font-size: $tiny;  
                 text-align: center;
+            } 
+            @media (min-width: $xl) {
+                display: flex;
+                margin: 20px 10px 0;
+                width: calc(25% - 40px);
+                float: left;
+                
             }   
         }   
-    }            
-}            
+    }
+    .center{
+        text-align: center;  
+        .pagination {
+            display: inline-block;
+            text-align: center;
+            padding-top: 20px;
+            a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                .active {
+                background-color: #4CAF50;
+                color: white;
+                        
+                }
+            }
+            :hover:not(.active) {
+                background-color: #ddd;}    
+        } 
+    }
+    .line {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid black;
+        padding: 20px;
+    }    
+}
+
 
 
 

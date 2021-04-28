@@ -183,10 +183,9 @@ header .header__wrap .nav {
 
 @media (min-width: 920px) {
   .main__wrap .content__boxes {
-    display: flex;
+    display: table;
     padding: 10px 0 0 20px;
     justify-content: space-evenly;
-    overflow: hidden;
   }
 }
 
@@ -198,6 +197,7 @@ header .header__wrap .nav {
 
 .main__wrap .content__boxes .box__item .img {
   width: 100%;
+  height: 250px;
   padding: 30px;
   background: #f3d7ae;
 }
@@ -219,7 +219,8 @@ header .header__wrap .nav {
 
 @media (min-width: 920px) {
   .main__wrap .content__boxes .box__item {
-    display: flex;
+    display: inline-flex;
+    flex-direction: column;
     padding-top: 60px;
     margin: 20px 10px 0;
     width: calc(25% - 40px);

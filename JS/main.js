@@ -2,7 +2,7 @@
 
 
 
-//Dropdown Meniu animation 
+//Dropdown Meniu animation in js
 
 
 let dropbtn = document.querySelector('.dropbtn');

@@ -2,7 +2,7 @@
 
 
 
-//Dropdown Meniu animation and VAR
+//Dropdown Meniu animation 
 
 
 let dropbtn = document.querySelector('.dropbtn');
